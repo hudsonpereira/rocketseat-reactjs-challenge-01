@@ -1,0 +1,78 @@
+.main {
+  width: 736px;
+  max-width: 100%;
+  margin: -1.5rem auto auto auto;
+}
+
+.main form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.main form input[type="text"] {
+  flex: 1;
+  border-radius: 8px;
+  line-height: 0.5rem;
+  padding: 1rem;
+  background-color: var(--gray-500);
+  color: white;
+  border: 1px var(--gray-700) solid;
+  outline: none;
+
+  transition: 0.25s border;
+}
+
+.main form input[type="text"]:focus {
+  border: 1px var(--purple-dark) solid;
+}
+
+.main form button {
+  padding: 1rem;
+  background-color: var(--blue-dark);
+  border: none;
+  outline: none;
+  line-height: 0.5rem;
+  color: var(--gray-100);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+
+  transition: 0.25s background-color;
+}
+
+.main form button:hover {
+  background-color: var(--blue);
+}
+
+.tasksWrapper {
+  margin-top: 4rem;
+}
+
+.tasksWrapper header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--purple);
+  font-weight: bold;
+}
+
+.tasksWrapper header .counter {
+  border-radius: 999px;
+  background-color: var(--gray-400);
+  padding: 2px 8px;
+  color: var(--gray-200);
+  font-weight: normal;
+}
+
+.createdTasksHeader {
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.mainTasks {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}

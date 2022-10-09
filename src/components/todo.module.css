@@ -1,0 +1,31 @@
+.todo {
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 1rem;
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  color: var(--gray-100);
+}
+
+.todo div:nth-child(2) {
+  flex: 1;
+}
+
+.deleteButton {
+  background-color: transparent;
+  border: none;
+  color: var(--gray-300);
+}
+
+.deleteButton svg:hover {
+  color: var(--danger);
+  cursor: pointer;
+}
+
+.todoDone {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
